@@ -1,0 +1,9 @@
+{
+	"m_title":"WiFi",
+	"m_descr":"If pluged WiFi USB stick to Raspberry Pi you can set mode: access mode or client",
+	"l_wifiMode":"WiFi mode",
+	"l_clientMode_SSID":"SSID of acces point to which you want to connect",
+	"l_clientMode_password":"Password of acces point to which you want to connect",
+	"l_accessPointMode_SSID":"SSID of your access point (Raspberry Pi)",
+	"l_accessPointMode_password":"Password of your access point (Raspberry Pi)"
+}

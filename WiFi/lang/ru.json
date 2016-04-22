@@ -1,0 +1,9 @@
+{
+	"m_title":"WiFi",
+	"m_descr":"При подключении WiFi USB стика к Raspberry Pi можно настроить режим работы: точка доступа или клиент",
+	"l_wifiMode":"Режим работы WiFi",
+	"l_clientMode_SSID":"SSID точки доступа к которой хотите подлкючиться",
+	"l_clientMode_password":"Пароль точки доступа к которой хотите подлкючиться",
+	"l_accessPointMode_SSID":"SSID для вашей точки доступа",
+	"l_accessPointMode_password":"Пароль для вашей точки доступа"
+}

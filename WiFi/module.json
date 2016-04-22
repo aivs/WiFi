@@ -1,0 +1,94 @@
+{
+	"singleton": true,
+	"dependencies": [],
+	"category": "support_external_dev",
+	"author": "Z-Wave.Me",
+	"homepage": "http://razberry.z-wave.me",
+	"icon": "icon.png",
+    "moduleName": "WiFi",
+	"version": "1.0.0",
+	"maturity": "stable",
+	"repository": {
+		"type": "git",
+		"source": "https://github.com/Z-Wave-Me/home-automation"
+	},
+	"defaults": {
+		"title": "__m_title__",
+		"description": "__m_descr__",
+
+		"wifiMode": "Client",
+
+		"clientMode_SSID": "",
+		"clientMode_password": "",
+
+		"accessPointMode_SSID": "RaZberry",
+		"accessPointMode_password": ""
+
+	},
+	"schema": {
+		"type": "object",
+		"properties": {
+			"wifiMode": {
+				"type": "string",
+				"enum": ["Client", "AccessPoint"],
+				"required": true
+			},
+
+			"clientMode_SSID": {
+				"type": "string",
+				"required": true,
+				"dependencies": "wifiMode"
+			},
+			"clientMode_password": {
+				"type": "string",
+				"required": true,
+				"dependencies": "wifiMode"
+			},
+
+			"accessPointMode_SSID": {
+				"type": "string",
+				"required": true,
+				"dependencies": "wifiMode"
+			},
+			"accessPointMode_password": {
+				"type": "string",
+				"required": true,
+				"dependencies": "wifiMode"
+			}
+		}
+	},
+	"options": {
+		"fields": {
+			"wifiMode": {
+				"label": "__l_wifiMode__",
+				"type": "select"
+			},
+
+			"clientMode_SSID": {
+				"label": "__l_clientMode_SSID__",
+				"dependencies": {
+					"wifiMode": "Client"
+				}
+			},
+			"clientMode_password": {
+				"label": "__l_clientMode_password__",
+				"dependencies": {
+					"wifiMode": "Client"
+				}
+			},
+
+			"accessPointMode_SSID": {
+				"label": "__l_accessPointMode_SSID__",
+				"dependencies": {
+					"wifiMode": "AccessPoint"
+				}
+			},
+			"accessPointMode_password": {
+				"label": "__l_accessPointMode_password__",
+				"dependencies": {
+					"wifiMode": "AccessPoint"
+				}
+			}
+		}
+	}
+}
