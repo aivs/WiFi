@@ -2,4 +2,7 @@ apt-get install hostapd udhcpd
 cp WiFi /opt/z-way-server/automation/modules/WiFi
 cp udhcpd.conf /etc/udhcpd.conf
 cp hostapd.conf /etc/hostapd/hostapd.conf
-cp .syscommands /opt/z-way-server/automation/.syscommands
+add
+"/opt/z-way-server/automation/modules/WiFi/bash-scripts/client.sh
+/opt/z-way-server/automation/modules/WiFi/bash-scripts/accessPoint.sh"
+to  /opt/z-way-server/automation/.syscommands
